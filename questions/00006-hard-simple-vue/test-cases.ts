@@ -17,8 +17,11 @@ SimpleVue({
   },
   computed: {
     fullname() {
-      return `${this.firstname} ${this.lastname}`
+      return `${this.foo} ${this.lastname}`
     },
+    foo() {
+      return 'fooValue'
+    }
   },
   methods: {
     getRandom() {
