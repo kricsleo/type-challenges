@@ -5,6 +5,9 @@ const promiseAllTest2 = PromiseAll([1, 2, Promise.resolve(3)] as const)
 const promiseAllTest3 = PromiseAll([1, 2, Promise.resolve(3)])
 const promiseAllTest4 = PromiseAll<Array<number | Promise<number>>>([1, 2, 3])
 
+type p1 = typeof promiseAllTest1
+type p4 = typeof promiseAllTest4
+
 type cases = [
   Expect<Equal<typeof promiseAllTest1, Promise<[1, 2, 3]>>>,
   Expect<Equal<typeof promiseAllTest2, Promise<[1, 2, number]>>>,
