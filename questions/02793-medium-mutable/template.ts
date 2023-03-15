@@ -1,1 +1,3 @@
-type Mutable<T> = any
+type Mutable<T extends object> = {
+  -readonly [key in keyof T]: T[key]
+}
