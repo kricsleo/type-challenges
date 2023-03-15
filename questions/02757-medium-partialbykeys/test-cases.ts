@@ -17,7 +17,7 @@ interface UserPartialNameAndAge {
   age?: number
   address: string
 }
-
+type c9 = PartialByKeys<User>
 type cases = [
   Expect<Equal<PartialByKeys<User, 'name'>, UserPartialName>>,
   Expect<Equal<PartialByKeys<User, 'name' | 'age'>, UserPartialNameAndAge>>,
