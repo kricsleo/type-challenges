@@ -10,5 +10,6 @@ type AllCombinations<S extends string, U extends string = String2Union2<S>> =
   isNever<U> extends true
     ? ''
     : {
+      // distribute and rejoin union type 
       [C in U]: `${C}${AllCombinations<never, Exclude<U, C>>}` | ''
     }[U]
