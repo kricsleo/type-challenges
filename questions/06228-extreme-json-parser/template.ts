@@ -11,4 +11,5 @@ type ParseResult<T, K extends Token[]> = [T, K]
 type Tokenize<T extends string, S extends Token[] = []> = Token[]
 type ParseLiteral<T extends Token[]> = ParseResult<any, T>
 
+// 不会（简单直接
 type Parse<T extends string> = Pure<ParseLiteral<Tokenize<T>>[0]>
