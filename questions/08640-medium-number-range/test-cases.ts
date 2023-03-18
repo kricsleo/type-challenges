@@ -16,6 +16,7 @@ type Result3 =
   | 111 | 112 | 113 | 114 | 115 | 116 | 117 | 118 | 119 | 120
   | 121 | 122 | 123 | 124 | 125 | 126 | 127 | 128 | 129 | 130
   | 131 | 132 | 133 | 134 | 135 | 136 | 137 | 138 | 139 | 140
+  
 type cases = [
   Expect<Equal<NumberRange<2, 9>, Result1>>,
   Expect<Equal<NumberRange<0, 2>, Result2>>,
