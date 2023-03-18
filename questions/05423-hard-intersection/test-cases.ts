@@ -1,5 +1,5 @@
 import type { Equal, Expect } from '@type-challenges/utils'
-
+type c10 = Intersection<[[1, 2], [2, 3], [2, 2]]>
 type cases = [
   Expect<Equal<Intersection<[[1, 2], [2, 3], [2, 2]]>, 2>>,
   Expect<Equal<Intersection<[[1, 2, 3], [2, 3, 4], [2, 2, 3]]>, 2 | 3>>,
