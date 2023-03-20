@@ -1,7 +1,6 @@
 import type { Equal, Expect } from '@type-challenges/utils'
 
 
-type c10 = FlattenDepth<[1, [2, [3, [4, [5]]]]], 19200>
 type cases = [
   Expect<Equal<FlattenDepth<[]>, []>>,
   Expect<Equal<FlattenDepth<[1, 2, 3, 4]>, [1, 2, 3, 4]>>,

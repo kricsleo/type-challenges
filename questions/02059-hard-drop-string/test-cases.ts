@@ -1,7 +1,5 @@
 import type { Equal, Expect } from '@type-challenges/utils'
 
-type c10 = DropString<'butter fly!', ''>
-type c11 = String2Union<''>
 type cases = [
   Expect<Equal<DropString<'butter fly!', ''>, 'butter fly!'>>,
   Expect<Equal<DropString<'butter fly!', ' '>, 'butterfly!'>>,

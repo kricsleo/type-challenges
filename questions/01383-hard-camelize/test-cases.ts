@@ -1,15 +1,5 @@
 import type { Equal, Expect } from '@type-challenges/utils'
 
-type c10 = Camelize<{
-  some_prop: string
-  prop: { another_prop: string }
-  array: [
-    { snake_case: string },
-    { another_element: { yet_another_prop: string } },
-    { yet_another_element: string },
-  ]
-}>
-
 type cases = [
   Expect<Equal<
     Camelize<{

@@ -1,5 +1,5 @@
 import type { Equal, Expect } from '@type-challenges/utils'
-type c10= Fill<[1, 2, 3], 0>
+
 type cases = [
   Expect<Equal<Fill<[], 0>, []>>,
   Expect<Equal<Fill<[], 0, 0, 3>, []>>,

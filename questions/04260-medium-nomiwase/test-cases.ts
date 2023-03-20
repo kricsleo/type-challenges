@@ -1,6 +1,5 @@
 import type { Equal, Expect } from '@type-challenges/utils'
 
-type c10 = AllCombinations<'ABC'>
 type cases = [
   Expect<Equal<AllCombinations<''>, ''>>,
   Expect<Equal<AllCombinations<'A'>, '' | 'A'>>,
