@@ -4,6 +4,8 @@ import { ExpectFalse, NotEqual } from '@type-challenges/utils'
 let x = 1
 let y = 1 as const
 
+type c10 = Integer<typeof x>
+
 type cases1 = [
   Expect<Equal<Integer<1>, 1>>,
   Expect<Equal<Integer<1.1>, never>>,
