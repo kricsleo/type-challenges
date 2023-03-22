@@ -61,7 +61,7 @@ type DeepMutableTest2 = {
     }
   }
 }
-
+type c = DeepMutable<Test2>
 type cases = [
   Expect<Equal<DeepMutable<Test1>, DeepMutableTest1>>,
   Expect<Equal<DeepMutable<Test2>, DeepMutableTest2>>,
