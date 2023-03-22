@@ -1,1 +1,1 @@
-type All = any
+type All<A extends any[], T> = MyEqual<A[number], T>
